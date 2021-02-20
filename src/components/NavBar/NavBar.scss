@@ -1,0 +1,57 @@
+body{
+  margin: 0;
+}
+
+.wrapper{
+  background: linear-gradient(135deg, #77c8c0, #267aac);
+  padding: 40px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+
+  .brand{
+  font-size: 32px;
+  font-weight: 600;
+  margin-left: 50px;
+  }
+
+  > ul{
+    display: flex;
+    margin: auto 150px;
+    padding: auto;
+    li{
+      list-style: none;
+      display: inline-block;
+      margin-right: 50px;
+      position: relative;
+      a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
+        &:hover{
+          color: red;
+        }
+      }
+     > ul{ /*dropdown*/
+        display: none;
+        background-color: #2c2c2c;
+        padding: 20px;
+        position: absolute;
+        left: 0;
+        li{
+          padding: 10px 0;
+          display: block;
+          a{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+li.dropdown:hover{
+  ul{
+    display:block;
+  }
+}
