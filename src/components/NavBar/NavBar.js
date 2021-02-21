@@ -7,7 +7,7 @@ export default class NavBar extends Component {
   render() {
     return (
       <div class="wrapper">
-        <div class="brand">Pro Scape</div>
+        <div class="brand">La Bolsa</div>
         <ul class="nav-root">
           <li>
             <Link to="/">Home</Link>
