@@ -19,7 +19,19 @@ export default class RailsPG extends Component {
       })
   }
 
+
+
   render() {
+    const keys = [
+      'ticker_symbol',
+      'purchase_price',
+      'shares',
+      'purchase_date',
+      'sale_date',
+      'market_index',
+      'profit_loss'
+    ]
+
     const { isLoading, tableData } = this.state;
 
     if ( isLoading ) {
@@ -29,7 +41,7 @@ export default class RailsPG extends Component {
     return (
       <div>
         <br/> Table 1 data
-        <Table data={this.state.tableData}/>
+        <Table keys={keys} tableData={this.state.tableData}/>
       </div>
     );
   }
