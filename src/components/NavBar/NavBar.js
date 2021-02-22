@@ -6,18 +6,18 @@ export default class NavBar extends Component {
 
   render() {
     return (
-      <div class="wrapper">
-        <div class="brand">La Bolsa</div>
-        <ul class="nav-root">
+      <div className="wrapper">
+        <div className="brand">La Bolsa</div>
+        <ul className="nav-root">
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/about">About</Link>
           </li>
-          <li class="dropdown">
+          <li className="dropdown">
             <Link to="/services">Backend+DB</Link>
-            <ul class="dropdown-block">
+            <ul className="dropdown-block">
               <li>
                 <Link to="/node-mongo">Node+MongoDB</Link>
               </li>
