@@ -14,7 +14,7 @@ export default class Table extends React.Component {
     }
 
     getHeader = function(){
-      var keys = this.getKeys();
+      const keys = this.getKeys();
       return keys.map((key, index)=>{
         return <th key={key}>{key.toUpperCase()}</th>
       })
