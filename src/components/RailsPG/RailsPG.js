@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import Table from '../Table/Table'
+import MyModal from '../Modal/Modal'
+import AddStockButton from '../Buttons/AddStockButton/AddStockButton'
 
 export default class RailsPG extends Component {
   constructor(props){
@@ -39,9 +41,11 @@ export default class RailsPG extends Component {
     }
 
     return (
-      <div>
-        <br/> Table 1 data
+      <div id="main">
+        <br/> Rails and PG
         <Table keys={keys} tableData={this.state.tableData}/>
+        <AddStockButton/>
+        <MyModal/>
       </div>
     );
   }
